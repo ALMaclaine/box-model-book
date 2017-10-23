@@ -9,7 +9,7 @@ seriously should at least be aware of the box-sizing reset.
 
 So who is actually using the box-sizing reset in the wild?
 
-Well perhaps you.
+Well, perhaps you.
 
 Every css framework I investigated used the box-sizing property to set border-box
 at least one place.  However, the majority of the frameworks used the reset directly.
