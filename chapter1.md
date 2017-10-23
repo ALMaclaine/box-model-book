@@ -118,8 +118,6 @@ Absolutely positioned boxes that have no width set on them behave a bit strangel
 
 Keep in mind that floated boxes behave in the same manner.
 
-
-
 Inline Elements
 
 It's important to note that inline elements are boxes too. They create boxes of their own
@@ -130,8 +128,6 @@ From Chris Coyier
 %Quote
 We've been kind of focusing on boxes as block-level elements here. It's easy to think of block-level elements as boxes, but inline elements are boxes too. Think of them as really really long and skinny rectangles, that just so happen to wrap at every line. They are able to have margin, padding, borders just like any other box.
 %
-
-
 
 A cool trick to see every box on the screen is as follows
 
