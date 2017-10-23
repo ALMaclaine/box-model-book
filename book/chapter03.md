@@ -123,24 +123,9 @@ Some things to keep in mind for the border-box model.
 >2. Borders and padding now reduce content size
 >3. Be alert if you're transitioning an entire site to the new box model
 
-## There's a price for everything.
+box-sizing also impacts the dom as well, so expect javascript functions related to dimensions
+to adjust accordingly.
 
-A few issues with the border-box model that people list are.
-
-### Issue with em paddings
-
-[From Roger Johansson](http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/)
- >The box-sizing behavior is neat but has issues with the units you use, for padding, doesn't like ems."
-
-### Nested border-box
-
-[From Roger Johansson](http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/)
->It has problems when one element with box-sizing:border-box is nested inside another. So in example 3, the box-sizing behavior is only applied to the column elements, not the input fields. To avoid the input fields becoming wider than their parents, I’ve made them a bit narrower for IE 7. Example 4 shows a possible workaround without using box-sizing. I’ve just reduced the widths of the columns and input fields to where they don’t become too wide until the browser window is really narrow.
-
-### box-sizing table bug
-
-[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)
->box-sizing doesn't completly work for tables, can be read about in the [bug](https://bugs.chromium.org/p/chromium/issues/detail?id=124816) report.
 
 #### Citations
 1. [https://css-tricks.com/almanac/properties/b/box-sizing](https://css-tricks.com/almanac/properties/b/box-sizing/)
@@ -150,5 +135,3 @@ A few issues with the border-box model that people list are.
 5. [https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0](https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0)
 6. [http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223)
 7. [https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
-8. [http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/](http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/)
-9. [https://bugs.chromium.org/p/chromium/issues/detail?id=124816](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)

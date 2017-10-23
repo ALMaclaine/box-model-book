@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ex04 - ie model</title>
+   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+      }
+      body, html {
+         height: 100%;
+         min-height: 400px;
+         background-color: lightgrey;
+      }
+
+      .flex {
+         display: flex;
+         justify-content: center;
+      }
+
+      .flex-center {
+         align-items: center;
+      }
+
+      .h80 {
+         height: 80%;
+      }
+
+      .flx-shr0 {
+         flex-shrink: 0;
+      }
+
+      .text {
+         font-family: 'Slabo 27px', serif;
+         font-size: 2em;
+         color: #333;
+         background-color: #bbb;
+         padding: 100px 0;
+         text-align: center;
+         line-height: 50px;
+      }
+
+      .text2 {
+         font-family: 'Slabo 27px', serif;
+         font-size: 2em;
+         color: #333;
+         background-color: #bbb;
+         padding: 50px 0;
+         text-align: center;
+         line-height: 50px;
+      }
+
+      .box {
+         width: 250px;
+         height: 250px;
+         border: 50px solid lightpink;
+         margin: 50px;
+      }
+
+      .box2 {
+         box-sizing: border-box;
+         width: 250px;
+         height: 250px;
+         border: 50px solid lightpink;
+      }
+
+      td {
+         padding: 0 24px;
+      }
+
+      table {
+         margin-left: 50px;
+      }
+
+   </style>
+</head>
+<body>
+   <div class="flex flex-center">
+      <div class="box flx-shr0">
+         <p class="text">content</p>
+      </div>
+      <div class="box2 flx-shr0">
+         <p class="text2">content</p>
+      </div>
+   </div>
+   <div class="flex flex-center">
+      <div class="flx-shr0">
+         <table id="tab1" class="text">
+              <tr>
+                <th></th>
+                <th>Box1</th>
+                <th>Box2</th>
+              </tr>
+              <tr>
+                <td>Total Dimensions:</td>
+                <td><span id="b1htw"></span> x <span id="b1hth"></span></td>
+                <td><span id="b2htw"></span> x <span id="b2hth"></span></td>
+              </tr>
+              <tr>
+                <td>Content Dimensions:</td>
+                <td><span id="b1hcw"></span> x <span id="b1hch"></span></td>
+                <td><span id="b2hcw"></span> x <span id="b2hch"></span></td>
+              </tr>
+         </table>
+      </div>
+   </div>
+   <script>
+      const box1TotalWidth  = document.querySelector(".box").offsetWidth;
+      const box1TotalHeight = document.querySelector(".box").offsetHeight;
+
+      document.querySelector("#b1htw").innerText = box1TotalWidth;
+      document.querySelector("#b1hth").innerText = box1TotalWidth;
+
+      const box2TotalHeight = document.querySelector(".box2").offsetHeight;
+      const box2TotalWidth  = document.querySelector(".box2").offsetWidth;
+
+      document.querySelector("#b2htw").innerText = box2TotalWidth;
+      document.querySelector("#b2hth").innerText = box2TotalWidth;
+
+      const box1ContentHeight = document.querySelector(".box").clientHeight;
+      const box1ContentWidth  = document.querySelector(".box").clientWidth;
+
+      document.querySelector("#b1hcw").innerText = box1ContentHeight;
+      document.querySelector("#b1hch").innerText = box1ContentHeight;
+
+      const box2ContentHeight = document.querySelector(".box2").clientHeight;
+      const box2ContentWidth  = document.querySelector(".box2").clientWidth;
+
+      document.querySelector("#b2hcw").innerText = box2ContentHeight;
+      document.querySelector("#b2hch").innerText = box2ContentHeight;
+
+
+   </script>
+</body>
+</html>

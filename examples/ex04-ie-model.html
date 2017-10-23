@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Ex03 - w3c model</title>
+   <title>Ex04 - ie model</title>
    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
       * {
          padding: 0;
          margin: 0;
+         box-sizing: border-box;
       }
       body, html {
          height: 100%;
@@ -50,7 +51,7 @@
          font-size: 2em;
          color: #333;
          background-color: #bbb;
-         padding: 100px 0;
+         padding: 50px 0;
          text-align: center;
          line-height: 50px;
       }
@@ -69,7 +70,7 @@
       }
 
       .mandb {
-         width: 48px;
+         width: 50px; // 48 -> 50
          height: 32px;
       }
 
@@ -80,23 +81,23 @@
       }
 
       .lb1 {
-         width: 248px;
+         width: 250px; // 148 -> 250
          margin-right: 100px;
          height: 16px;
       }
 
       .lb2 {
-         margin-left: 250px;
+         margin-left: 150px; // 250 -> 150
       }
 
       .lb3 {
-         margin-left: 350px;
+         margin-left: 250px; // 350 -> 250
       }
 
       .rulers {
          position: absolute;
          top: 40%;
-         left: calc(50% - 225px);
+         left: calc(50% - 200px); // 225 -> 200
       }
 
    </style>
@@ -123,7 +124,7 @@
       </div>
       <div class="flex ml-50p w100">
          <div class="lb1 rl-box">
-            content width 250px
+            total width 250px
          </div>
       </div>
       <div class="fl2 w100">
