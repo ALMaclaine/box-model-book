@@ -65,8 +65,7 @@ this isn't always intuitive.
 [From Peter Paul Koch](https://netdiver.net/interviews/peterpaulkoch.php)
 >In my opinion this model is completely illogical.
 Logically, a box is measured from border to border. Take a physical box, any box. Put something in it that is distinctly smaller than the box. Ask anyone to measure the width of the box. He'll measure the distance between the sides of the box (the 'borders'). No one will think of measuring the content of the box.
->
-Web designers who create boxes for holding content care about the *visible* width of the box, about the distance from border to border. The borders, and not the content, are the visual cues for the user of the site. Nobody is interested in the width of the content.
+>Web designers who create boxes for holding content care about the *visible* width of the box, about the distance from border to border. The borders, and not the content, are the visual cues for the user of the site. Nobody is interested in the width of the content.
 I wonder why W3C made its box model so needlessly complicated?
 
 Another problem, is that the standard box model is usually at odds with a designer's intention.
