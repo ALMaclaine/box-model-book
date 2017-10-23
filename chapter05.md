@@ -76,7 +76,7 @@ img, .content-box {
 ><br><br>Then, put another box in each of these boxes, with the desired padding and border (a.k.a. non-semantic stuff); width and height 100%.
 ><br><br>Problem solved! (Oh, rubbish: of course the content-box is all wrong!)
 
-## Not Everyones Ecstastic
+## Not Everyones Ecstatic
 
 ### [Dan Eden, Facebook & Dropbox](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Having used this on a project recently, I'm not 100% sold on the idea. It makes perfect sense for things like grid systems, and kills a lot of the usual layout headaches - particularly when it comes to mixing percentage and fixed unit width/height values, but it can become annoying to have to declare box-sizing: content-box; every time you want to override the universal selector.
