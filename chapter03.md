@@ -65,7 +65,7 @@ Here's an efficiency comparison via [Paul Irish](https://www.paulirish.com/2012/
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Any third party widgets add content directly into the page may need extra attention. Any widgets inside an iframe (like Disqus’s new theme) are naturally insulated from the parent page’s layout styles. If you need to make adjustments to the third party content you can apply box-sizing: content-box; to the widget and its descendants. This may not be trivial as form controls in particular are border-box by default, so you’ll also have to account for that.
 
-### What's it do for me?
+#### What's it do for me?
 
 So what are some of the benefits of using the border-box model?
 
