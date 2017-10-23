@@ -36,7 +36,7 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Elliot Sprehn, Adobe & Chromium](https://www.paulirish.com/wp-content/uploads/2011/gplus-boxsizing.html)
 >Yeah, I definitely think IE's model is superior.
 
-### [Nicolas Gallagher, normalize.css]
+### [Nicolas Gallagher, normalize.css](https://www.paulirish.com/wp-content/uploads/2011/gplus-boxsizing.html)
 >Yeah, ever since IE8 came out with support for `box-sizing` we've been waiting until IE6/7 have negligible market share. I'm not sure how useful a global reset of the box model is going to be, but it's definitely useful for fluid components at the moment.
 
 ### [Tommy Maintz, Sencha](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
