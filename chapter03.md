@@ -43,7 +43,7 @@ is totally safe today.
 
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Totally. jQuery works pretty great with it. As mentioned, browser support is excellent. And a number of projects use this layout model by default, including the WebKit Web Inspector (aka Chrome DevTools). I heard from Dutch front-end developer Yathura Thorn on his experience:
->>We’ve been using * `{ box-sizing: border-box; }` in one of my projects (deployed in production, averaging over 1mln visits a month) at work for about a year now, and it seems to be holding up just fine. The project has been tested in IE8 & 9 and the latests Firefox and Chrome versions and we’ve had no problems. All jQuery (+UI) offset calculations and animations run fine, even in any element we’ve displayed as inline-block. As of late we’ve started testing the project on mobile devices (iPhone, iPad and Android) and we’ve had no issues regarding box-sizing with any of them yet, so it seems to work just fine.
+>>We’ve been using `* { box-sizing: border-box; }` in one of my projects (deployed in production, averaging over 1mln visits a month) at work for about a year now, and it seems to be holding up just fine. The project has been tested in IE8 & 9 and the latests Firefox and Chrome versions and we’ve had no problems. All jQuery (+UI) offset calculations and animations run fine, even in any element we’ve displayed as inline-block. As of late we’ve started testing the project on mobile devices (iPhone, iPad and Android) and we’ve had no issues regarding box-sizing with any of them yet, so it seems to work just fine.
 
 
 <div align="center">
