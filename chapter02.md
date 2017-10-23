@@ -72,24 +72,21 @@ Another problem, is that the standard box model is usually at odds with a design
 
 [From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 >An obvious question is, “Isn’t working with the default model just a matter of learning a different way of saying the same thing?” If you’ve really got your heart set on a 100-pixel box, can’t you just do a bit of math and call it 50 pixels with 20px padding and 5px borders?
->
-That we’d have to do this in the first place points to probably the simplest argument against the default box model: it approaches layout differently than actual designers do. When I try to lay out a page, I never think, “No matter what happens to the rest of the layout, I need this paragraph of text to take up exactly half of the page width.” I always think: “This column that contains text—and which has padding and borders and whatnot—should fill half the page.”
->
-So the default model puts us through a lot of unnecessary translation work. Do we really want to manually be doing a bunch of math—”element width = declared width – (left padding + right padding) – (left border + right border)”—just to make CSS understand what we should have been able to declare with a simple, emphatic “width”?
+>That we’d have to do this in the first place points to probably the simplest argument against the default box model: it approaches layout differently than actual designers do. When I try to lay out a page, I never think, “No matter what happens to the rest of the layout, I need this paragraph of text to take up exactly half of the page width.” I always think: “This column that contains text—and which has padding and borders and whatnot—should fill half the page.”
+>So the default model puts us through a lot of unnecessary translation work. Do we really want to manually be doing a bunch of math—”element width = declared width – (left padding + right padding) – (left border + right border)”—just to make CSS understand what we should have been able to declare with a simple, emphatic “width”?
 
 The traditional box model also really hampers responsive design
 
 [From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 >The default box model also doesn’t work well for responsive design. Consider the following very intuitive, should-be-very-easy style declaration, attempting to divide a responsive-width container into two equal-width columns, each with 15px of padding:
 
->```css
+```css
 .responsive-container .half-width-column {
    width: 50%;
    padding: 15px;
 }
 ```
->
-With the default box model, there’s no way to make this work. To get a 50% total width, you’d have to subtract 15px from 50% of the container width; but you don’t know the container width to be able to convert 15px into a percentage. As a result, whatever width value you attempt will always be broken: the columns will break and stack vertically at some widths, and they won’t fill the container at others.
+>With the default box model, there’s no way to make this work. To get a 50% total width, you’d have to subtract 15px from 50% of the container width; but you don’t know the container width to be able to convert 15px into a percentage. As a result, whatever width value you attempt will always be broken: the columns will break and stack vertically at some widths, and they won’t fill the container at others.
 %
 
 And perhaps worst of all, it creates fragile layouts
