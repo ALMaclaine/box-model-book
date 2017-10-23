@@ -15,6 +15,14 @@ The CSS box model is the foundation of layout on the Web — each element is rep
 
 Here is an image of the box model.
 
+<div align="center">
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">
+    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/wlarrows.png">
+  </a>
+  <br>
+  <br>
+</div>
+
 [![Box Model](https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/wlarrows.png)]
 (https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 
