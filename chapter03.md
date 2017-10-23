@@ -142,7 +142,7 @@ A few issues with the border-box model that people list are.
 [Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)
 >box-sizing doesn't completly work for tables, can be read about in the [bug](https://bugs.chromium.org/p/chromium/issues/detail?id=124816) report.
 
-### Citations
+#### Citations
 1. [https://css-tricks.com/almanac/properties/b/box-sizing](https://css-tricks.com/almanac/properties/b/box-sizing/)
 2. [http://caniuse.com/#feat=css3-boxsizing](http://caniuse.com/#feat=css3-boxsizing)
 3. [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
