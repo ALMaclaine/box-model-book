@@ -27,7 +27,7 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 >I would love a different box model! I find it bizarre that padding and border add the width of an object, and would love to be able to give something like a textarea 100% width and 3px padding without worrying what it's going to do the layout. Perhaps something like padding-inside as a new selector?
 ><br><br>In that vain I also wish I could specify a 100% width for an element, minus a set fixed width. Again, very useful when creating fluid designs with form elements!
 
-### [Peter Paul Koch, famouse designer](https://netdiver.net/interviews/peterpaulkoch.php)
+### [Peter Paul Koch, famous designer](https://netdiver.net/interviews/peterpaulkoch.php)
 >My favorite example is W3C's box model. In this model, the width property defines the width of the content of the box, excluding paddings and borders. In my opinion this model is completely illogical.
 ><br><br>Logically, a box is measured from border to border. Take a physical box, any box. Put something in it that is distinctly smaller than the box. Ask anyone to measure the width of the box. He'll measure the distance between the sides of the box (the 'borders'). No one will think of measuring the content of the box.
 ><br><br>Web designers who create boxes for holding content care about the *visible* width of the box, about the distance from border to border. The borders, and not the content, are the visual cues for the user of the site. Nobody is interested in the width of the content.
