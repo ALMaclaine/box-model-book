@@ -48,13 +48,13 @@ a ruler has been set against the box model so you can really understand the big 
 
 Click <a href="../examples/ex03-w3c-model.html">here</a> for the file.
 
-## Example 4 - ie box-model
+## Example 4 - IE box-model
 
 Just like example 3, except using the ie box-model instead.
 
-Click <a href="../examples/ex04-ie-model.html">here</a> for the file..
+Click <a href="../examples/ex04-ie-model.html">here</a> for the file.
 
-## Example 5 - dimensions
+## Example 5 - Dimensions
 
 In this example we use the javascript functions client/offset dimensions to see
 how box-sizing impacts the dom.
@@ -64,11 +64,11 @@ Click <a href="../examples/ex05-js-dimensions.html">here</a> for the file.
 You can see that box-sizing is reflected in the dom and thus the javascript calls
 return the numbers you'd expect.
 
-## Exampele 6 - columns
+## Exampele 6 - Columns
 
 This example builds a three column layout using flex-box and box-sizing.
 
-Click  <a href="../examples/ex06-columns.html">here</a> for the file..
+Click  <a href="../examples/ex06-columns.html">here</a> for the file.
 
 Using border box makes it easy to make columns of text and then add padding
 because the content automatically adjust to fit and we keep our layout.
@@ -78,7 +78,7 @@ because the content automatically adjust to fit and we keep our layout.
 In this example we're building rows of yellow boxes for some reason.  The three
 columns represent three attempts.
 
-Click  <a href="../examples/ex07-broken-layouts.html">here</a> for the file..
+Click  <a href="../examples/ex07-broken-layouts.html">here</a> for the file.
 
 You can see in the first column all of our yellow boxes.  Why they are useful is a
 mystery, but they exist.  Suddenly we realize we need borders, so we add a thin
