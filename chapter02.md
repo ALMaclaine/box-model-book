@@ -2,7 +2,7 @@
 
 ## The CSS Box Model
 
-[From Jeff Kaufman](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
+[From Jeff Kaufman](https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/ascii-box.png)
 
 %Quote
 In December 1996 the W3C published CSS1, the first version of the CSS spec. It used this
