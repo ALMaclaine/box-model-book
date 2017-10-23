@@ -13,21 +13,26 @@ designer.  The key to understanding all of these questions, and many more, is th
 The CSS box model is the foundation of layout on the Web — each element is represented as a rectangular box, with the box's content, padding, border, and margin built up around one another like the layers of an onion. As a browser renders a web page layout, it works out what styles are applied to the content of each box, how big the surrounding onion layers are, and where the boxes sit in relation to one another. Before understanding how to create CSS layouts, you need to understand the box model.
 >
 
-%Insert
-Box model ai image html
-%
+Here is an image of the box model.
+
+[![Box Model](https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/wlarrows.png)]
+(https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 
 As you can see, the entire space of an element is composed of its content dimensions,
 its padding, its border and its margin.
 
 The formulas for caclulating the actual widths and lengths are
-   - width  = width  + padding-left + padding-right + border-left + border-right
-   - height = height + padding-top + padding-bottom + border-top + border-bottom
 
-%Insert
-Box model png
-http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223
-%
+- Width
+
+ - width  + padding-left + padding-right + border-left + border-right
+
+- Height
+
+ - height + padding-top + padding-bottom + border-top + border-bottom
+
+[![Box Model Dimensions](https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/box-model.png)]
+(http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223 "Treehouse Box-model")
 
 If any of the values are left undeclared then they default to the browser and unlikely to be 0,
 using a css reset will set all of these properties to a default values of 0.
@@ -36,15 +41,73 @@ The box model has a number of finer details that can be hard to pin down if you
 aren't looking for them.  One of the more interesting details of the box model
 is that it behaves differently depending on whether the width is explicitly set.
 
-From Chris Coyier (csstricks)
-
-%Quote
+[From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-1)
+>
 If you don't declare a width, and the box has static or relative positioning, the width will remain 100% in width and the padding and border will push inwards instead of outward. But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal... But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal.
-%
+>
+<h2>Example of code</h2>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ex01 - Default Width Behavior</title>
+   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+   <style>
+      * {
+         margin: 0;
+      }
 
-%Insert
-Widths default img
-%
+      html, body {
+         height: 100%;
+         background-color: lightgreen;
+      }
+
+      .center-container {
+         width: 90%;
+         margin: 0 auto;
+         height: 100%;
+         background-color: white;
+      }
+
+      .flex {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .box1 {
+         background-color: lightblue;
+         height: 25%;
+         border: 20px solid orange;
+      }
+
+      .box2 {
+         background-color: lightblue;
+         width: 100%;
+         margin-top: 5%;
+         height: 25%;
+         border: 20px solid orange;
+         margin-left: -20px;
+      }
+
+      .text {
+         font-size: 2em;
+         font-family: 'Slabo 27px', serif;
+         color: #999;
+      }
+
+   </style>
+</head>
+<body>
+<div class="center-container">
+   <div class="box1 flex">
+         <p class="text">No width property.</p>
+   </div>
+   <div class="box2 flex">
+      <p class="text">Width property 100%.</p>
+   </div>
+</div>
+</body>
+</html>
 
 Absolute Elements
 
