@@ -43,6 +43,14 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 >>[Gavin Smith](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) Reply
 >><br>Sometimes there's no way to add a child element to apply padding to that isn't otherwise completely unnecessary. What's the bigger evil, playing the CSS gods with new but fairly well supported box model adjustments or unnecessary markup?
 >><br><br>I say the latter. By a long shot.
+>
+>>[Matthew](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) Reply
+>><br>I disagree that it's buggy or highly unconventional. Box-sizing as a property has been around for a long time, and is stable enough that it's now (mostly) non-prefixed. And look, a LOT of us have hated the W3C box model from day 1 and found it completely unintuitive. I've been waiting for IE7 numbers to drop enough to start using it. So it's a completely conventional and legit solution. It makes CSS easier to work with. And with the behavior polyfill, maybe now's the time.
+
+### [Thierry Koblentz](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>I ran into an issue yesterday on iPad1 related to box-sizing, hence why I knew about the prefix issue. I learned the hard way... as usual ;)
+><br><br>Regarding what we used to call the "broken box model", I think the issue is that you do not own the content box and any change in border or padding impacts that content area. I understand that it can be easier for people to style boxes that way, but it's not a magic wand, you end up dealing with different issues.
+><br><br>For example, if you style a nested container using something like "width:50%" does it makes sense to you that what you get is *not* 50% of the width of the parent box?
 
 ### [Niels Matthijs](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Or just use margins on the inner elements instead of using padding on the container. Allows for more flexibility too. I rarely use padding, only if I need to reserve space for icons and such.
