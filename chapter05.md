@@ -35,6 +35,9 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Christopher Buecheler](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >So happy to hear this being advocated by a premiere developer. I've been complaining about CSS's box model since making the switch from table-based design back in the late 90s. Ending up having to set your 600px-wide column to 587px or whatnot to account for borders and padding is highly annoying and can make going back through the CSS time-consuming. I'm definitely looking forward to using the new box-sizing options on my future projects that don't need to be backward compatible with legacy browsers.
 
+### [fredsbend](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>I don't think I've ever coded a box without knowing I was going to put text in it later. I don't see the problem. I'm pretty obsessive about planning the page first, though, sometimes even sketching it on paper first. If my plan is good, there is very little to tweak.
+
 ### [Matt Kruse](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Also useful:
 >
