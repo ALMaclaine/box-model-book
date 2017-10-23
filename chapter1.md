@@ -19,6 +19,8 @@ Here is an image of the box model.
   </a>
 </div>
 
+## Model Details
+
 As you can see, the entire space of an element is composed of its content dimensions,
 its padding, its border and its margin.
 
@@ -41,6 +43,8 @@ Height
 If any of the values are left undeclared then they default to the browser and unlikely to be 0,
 using a css reset will set all of these properties to a default values of 0.
 
+## The Nitty Gritty
+
 The box model has a number of finer details that can be hard to pin down if you
 aren't looking for them.  One of the more interesting details of the box model
 is that it behaves differently depending on whether the width is explicitly set.
@@ -54,16 +58,16 @@ is that it behaves differently depending on whether the width is explicitly set.
   </a>
 </div>
 
-Absolute Elements
+### Absolute Elements
 
 While block level elements take up the entire width of the screen by default, absolute boxes do not. By default they only expand to fit their content.
 
 [From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-2)
 >Absolutely positioned boxes that have no width set on them behave a bit strangely. Their width is only as wide as it needs to be to hold the content. So if the box contains a single word, the box is only as wide as that word renders. If it grows to two words, it'll grow that wide. This should continue until the box is 100% of the parent's width (the nearest parent with relative positioning, or browser window) and then begin to wrap. It feels natural and normal for boxes to expand vertically to accommodate content, but it just feels strange when it happens horizontally. That strange feeling is warranted, as there are plenty of quirks in how different browsers handle this, not to mention just the fact that text renders differently across platforms.
 
-Keep in mind that floated boxes behave in the same manner.
+**Keep in mind that floated boxes behave in the same manner.**
 
-Inline Elements
+### Inline Elements
 
 It's important to note that inline elements are boxes too. They create boxes of their own
 and sit next to other inline elements until their widths expand past the break point.
@@ -71,6 +75,7 @@ and sit next to other inline elements until their widths expand past the break p
 [From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-4)
 >We've been kind of focusing on boxes as block-level elements here. It's easy to think of block-level elements as boxes, but inline elements are boxes too. Think of them as really really long and skinny rectangles, that just so happen to wrap at every line. They are able to have margin, padding, borders just like any other box.
 
+### Code Tricks
 
 If you want to visualize all the boxes in your design, a cool trick to see every box on the screen is as follows
 
