@@ -115,7 +115,9 @@ their box-sizing, we are able to cancel out box-sizing on certain sub-components
 
 ### Keep in mind
 
-Some things to keep in mind for the border-box model. (pressupinc)
+Some things to keep in mind for the border-box model.
+
+[From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 
 1. Margins are still outside the element.
 2. Borders and padding now reduce content size
@@ -146,4 +148,6 @@ A few issues with the border-box model that people list are.
 3. [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 4. [https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0](https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0)
 5. [http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223)
-6. [https://bugs.chromium.org/p/chromium/issues/detail?id=124816](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)
+6. [https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
+7. [http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/](http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/)
+8. [https://bugs.chromium.org/p/chromium/issues/detail?id=124816](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)
