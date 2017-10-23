@@ -119,9 +119,9 @@ Some things to keep in mind for the border-box model.
 
 [From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 
-1. Margins are still outside the element.
-2. Borders and padding now reduce content size
-3. Be alert if you're transitioning an entire site to the new box model
+>1. Margins are still outside the element.
+>2. Borders and padding now reduce content size
+>3. Be alert if you're transitioning an entire site to the new box model
 
 ### There's a price for everything.
 
