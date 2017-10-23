@@ -65,7 +65,7 @@ While block level elements take up the entire width of the screen by default, ab
 [From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-2)
 >Absolutely positioned boxes that have no width set on them behave a bit strangely. Their width is only as wide as it needs to be to hold the content. So if the box contains a single word, the box is only as wide as that word renders. If it grows to two words, it'll grow that wide. This should continue until the box is 100% of the parent's width (the nearest parent with relative positioning, or browser window) and then begin to wrap. It feels natural and normal for boxes to expand vertically to accommodate content, but it just feels strange when it happens horizontally. That strange feeling is warranted, as there are plenty of quirks in how different browsers handle this, not to mention just the fact that text renders differently across platforms.
 
-**Keep in mind that floated boxes behave in the same manner.**
+*Keep in mind that floated boxes behave in the same manner.*
 
 ### Inline Elements
 
