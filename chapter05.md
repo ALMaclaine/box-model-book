@@ -20,6 +20,9 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Mike Sherov, Adobe & jQuery](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Im looking to fix all known bugs with border-box in jquery in version 1.8. I've been saying for a while that all signs point to wide adoption of border-box, especially on mobile. If anyone here is using border-box and jquery and finds a bug please file it at: http://bugs.jquery.com Thanks!
 
+### [Tommy Maintz, Sencha](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>In both ExtJS 4+ and Sencha Touch 2+ we have been using box-sizing: border-box. It greatly simplifies your CSS, layouts and many of the calculations we had to do in JavaScript before. Glad to see others are starting to see the benefits of this.
+
 ### [Yathura Thorn](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >We’ve been using `* {box-sizing: border-box;}` in one of my projects (deployed in production, averaging over 1mln visits a month) at work for about a year now, and it seems to be holding up just fine. The project has been tested in IE8 & 9 and the latests Firefox and Chrome versions and we’ve had no problems. All jQuery (+UI) offset calculations and animations run fine, even in any element we’ve displayed as inline-block. As of late we’ve started testing the project on mobile devices (iPhone, iPad and Android) and we’ve had no issues regarding box-sizing with any of them yet, so it seems to work just fine.
 
