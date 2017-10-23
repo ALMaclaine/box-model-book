@@ -60,7 +60,7 @@ dimensions should by respected, and lacking specificity, slack should come from 
 The w3x box model is a little like this very literal printer.  It takes you exactly at your direction, but
 this isn't always intuitive.
 
-## Professional Compltains
+## Professional Complaints
 
 [From Peter Paul Koch](https://netdiver.net/interviews/peterpaulkoch.php)
 >In my opinion this model is completely illogical.
