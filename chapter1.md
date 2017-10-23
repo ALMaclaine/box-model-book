@@ -46,91 +46,35 @@ is that it behaves differently depending on whether the width is explicitly set.
 If you don't declare a width, and the box has static or relative positioning, the width will remain 100% in width and the padding and border will push inwards instead of outward. But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal... But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal.
 >
 
-<head>
-   <title>Ex01 - Default Width Behavior</title>
-   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-   <style>
-      * {
-         margin: 0;
-      }
 
-      html, body {
-         height: 100%;
-         background-color: lightgreen;
-      }
-
-      .center-container {
-         width: 90%;
-         margin: 0 auto;
-         height: 100%;
-         background-color: white;
-      }
-
-      .flex {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
-
-      .box1 {
-         background-color: lightblue;
-         height: 25%;
-         border: 20px solid orange;
-      }
-
-      .box2 {
-         background-color: lightblue;
-         width: 100%;
-         margin-top: 5%;
-         height: 25%;
-         border: 20px solid orange;
-         margin-left: -20px;
-      }
-
-      .text {
-         font-size: 2em;
-         font-family: 'Slabo 27px', serif;
-         color: #999;
-      }
-
-   </style>
-</head>
-<body>
-<div class="center-container">
-   <div class="box1 flex">
-         <p class="text">No width property.</p>
-   </div>
-   <div class="box2 flex">
-      <p class="text">Width property 100%.</p>
-   </div>
-</div>
-</body>
+[![Widths](https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/widths.gif)]
+(https://quirksmode.org/css/user-interface/boxsizing.html "Default Widths")
 
 Absolute Elements
 
 While block level elements take up the entire width of the screen by default, absolute boxes do not. By default they only expand to fit their content.
 
-From Chris Coyier
-
-%Quote
+[From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-2)
+>
 Absolutely positioned boxes that have no width set on them behave a bit strangely. Their width is only as wide as it needs to be to hold the content. So if the box contains a single word, the box is only as wide as that word renders. If it grows to two words, it'll grow that wide. This should continue until the box is 100% of the parent's width (the nearest parent with relative positioning, or browser window) and then begin to wrap. It feels natural and normal for boxes to expand vertically to accommodate content, but it just feels strange when it happens horizontally. That strange feeling is warranted, as there are plenty of quirks in how different browsers handle this, not to mention just the fact that text renders differently across platforms.
-%
+>
 
 Keep in mind that floated boxes behave in the same manner.
+
+
 
 Inline Elements
 
 It's important to note that inline elements are boxes too. They create boxes of their own
 and sit next to other inline elements until their widths expand past the break point.
 
-From Chris Coyier
-
-%Quote
+[From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-4)
+>
 We've been kind of focusing on boxes as block-level elements here. It's easy to think of block-level elements as boxes, but inline elements are boxes too. Think of them as really really long and skinny rectangles, that just so happen to wrap at every line. They are able to have margin, padding, borders just like any other box.
-%
+>
 
-A cool trick to see every box on the screen is as follows
+If you want to visualize all the boxes in your design, a cool trick to see every box on the screen is as follows
 
-%Code
+```css
 * { 1px solid red !important; }
-%
+```
