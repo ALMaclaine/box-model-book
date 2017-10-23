@@ -37,7 +37,8 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 
 ### [Matt Kruse]
 >Also useful:
->```css
+>
+```css
 img, .content-box {
    box-sizing: content-box !important;
 }
