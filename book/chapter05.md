@@ -1,4 +1,4 @@
-# Chapter 4 - The Talk Around Town
+# Chapter 5 - The Talk Around Town
 
 During my research I found lots of people sharing interesting thoughts about their
 use of the box-sizing property and the css box-model.
