@@ -50,6 +50,11 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 >>[Matthew](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) Reply
 >><br>I disagree that it's buggy or highly unconventional. Box-sizing as a property has been around for a long time, and is stable enough that it's now (mostly) non-prefixed. And look, a LOT of us have hated the W3C box model from day 1 and found it completely unintuitive. I've been waiting for IE7 numbers to drop enough to start using it. So it's a completely conventional and legit solution. It makes CSS easier to work with. And with the behavior polyfill, maybe now's the time.
 
+### [Mr C](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>great tip, but non-square images with border / padding / margin appear to lose aspect ratio. presumably the same will happen to video too.
+><br><br>would this be a sensible tweak?
+><br><br> `*:not(img,video) { }`
+
 ### [Thierry Koblentz](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >I ran into an issue yesterday on iPad1 related to box-sizing, hence why I knew about the prefix issue. I learned the hard way... as usual ;)
 ><br><br>Regarding what we used to call the "broken box model", I think the issue is that you do not own the content box and any change in border or padding impacts that content area. I understand that it can be easier for people to style boxes that way, but it's not a magic wand, you end up dealing with different issues.
