@@ -26,7 +26,22 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Joe Lambert](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >I'm a big fan of this technique and have been using it in a number of mobile web apps (and increasingly) website projects. Its a really welcome way to create a sensible baseline to work from for cross platform development.
 
+### [Christopher Buecheler](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>So happy to hear this being advocated by a premiere developer. I've been complaining about CSS's box model since making the switch from table-based design back in the late 90s. Ending up having to set your 600px-wide column to 587px or whatnot to account for borders and padding is highly annoying and can make going back through the CSS time-consuming. I'm definitely looking forward to using the new box-sizing options on my future projects that don't need to be backward compatible with legacy browsers.
+
+
+
 ## Not Everyones Ecstastic
+
+### [Derek Watson](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>This seems like a buggy and highly unconventional solution to a simple problem. Instead, put your width on a container elements and padding on child elements. You'll find it works perfectly in all cases and you won't have to explain yourself at length to other developers on the project.
+>> [Kevin Nelson](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>> I would say to have to have two tags for every container is the unconventional solution that developers were forced to get used to because of the stupid box-model. To get a grid system to work this way you would need a container for the row, then a container for the column, and then a third tag inside each single column that does the padding...24 tags for 12 columns...or do it this way and have 12 tags one for each column...I don't see how in the world using the border-box CSS could possibly be more confusing than padding extending the width of a tag.
+>><br><br>As far as developers needing an explanation...Bootstrap 3 converts all tags to border-box, but I didn't have to have bootstrap 3 explained to me...I right-clicked on a span in firebug, saw that they were using pixel-padding for their columns but percentage widths and said, "WTF, how did they do that?" Then, I saw the box-sizing on the tag and looked it up with a quick google search. When I saw the definition for box-sizing, what it does, and what browsers support it, I could have thrown a party. It took all of 2 minutes to figure out what Bootstrap3 had done, and now that I know about it, I'll never go back...it is ridiculous to have 24 tags for 12 columns.
+><br><br>Sorry for the long rant...I just don't see how anyone can not LOVE to type less tags (AND less CSS required for the grid system itself) so that their HTML is clearer and more concise and doesn't have extra tags thrown in as work-arounds for a box-model that never should have existed, IMHO.
+
+### [Niels Matthijs](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>Or just use margins on the inner elements instead of using padding on the container. Allows for more flexibility too. I rarely use padding, only if I need to reserve space for icons and such.
 
 ### [Justin](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >I'm also a fan of changing box-sizing—to an extent. I think it's only appropriate with fluid applications since percentage widths generate unpredictable sizes.
