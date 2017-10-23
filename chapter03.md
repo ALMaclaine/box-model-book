@@ -39,131 +39,106 @@ is totally safe today.
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Due to browser support, this recommendation is only for projects that support IE8 and up. (Full browser compat at MDN) Firefox <= 28 still needs the -moz- prefix, and <= iOS4, Android <= 2.3 need the -webkit-, but everyone else uses the unprefixed. You can find more info about a box-sizing polyfill for IE6 & 7 at html5please.com/#box-sizing (which was developed with `* { box-sizing: border-box !important }`).
 
-### But is it safe?
+#### But is it safe?
 
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Totally. jQuery works pretty great with it. As mentioned, browser support is excellent. And a number of projects use this layout model by default, including the WebKit Web Inspector (aka Chrome DevTools). I heard from Dutch front-end developer Yathura Thorn on his experience:
 >>We’ve been using `* { box-sizing: border-box; }` in one of my projects (deployed in production, averaging over 1mln visits a month) at work for about a year now, and it seems to be holding up just fine. The project has been tested in IE8 & 9 and the latests Firefox and Chrome versions and we’ve had no problems. All jQuery (+UI) offset calculations and animations run fine, even in any element we’ve displayed as inline-block. As of late we’ve started testing the project on mobile devices (iPhone, iPad and Android) and we’ve had no issues regarding box-sizing with any of them yet, so it seems to work just fine.
 
-### But it's slow right?
+#### But it's slow right?
 
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >You might get up in arms about the universal `*` selector.
 ><br><br>Apparently you’ve heard its slow. Firstly, it’s not. It is as fast as h1 as a selector. It can be slow when you specifically use it like `.foo > *`, so don’t do that. Aside from that, you are not allowed to care about the performance of `*` unless you concatenate all your javascript, have it at the bottom, minify your css and js, gzip all your assets, and losslessly compress all your images. If you aren’t getting 90+ Page Speed scores, it’s way too early to be thinking about selector optimization. See also: CSS Selector Performance has changed! (For the better) by Nicole Sullivan.
 ><br><br>So… enjoy and hope you’ll find this a far more natural layout model.
 
-
-
-
-
-
-
-
-
-
+Here's an efficiency comparison via [Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/).
 
 <div align="center">
-  <a href="https://www.jefftk.com/p/the-revenge-of-the-ie-box-model">
-    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/ascii-iebox.png">
+  <a href="https://docs.google.com/spreadsheets/d/1jJUuSBQj6a3imkX_QYZDVW5eDyE5tXULTkqnI7rMLU8/edit#gid=0">
+    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/efficiency.png">
   </a>
 </div>
 
-[From Jeff Kaufman](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
->When Microsoft released CSS1 support with their new Trident layout engine, it acted as
-if the spec had instead had (refers to image). Specifically, IE was treating width to include the border and the padding while
-CCS1 treated width as including only the content. This became known as the IE box model.
+#### Does it play well?
 
-## Internet Explorer Box Model Bug
-This internet explorer "bug" is famous enough that it has its own wikipedia entry.
+[From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>Any third party widgets add content directly into the page may need extra attention. Any widgets inside an iframe (like Disqus’s new theme) are naturally insulated from the parent page’s layout styles. If you need to make adjustments to the third party content you can apply box-sizing: content-box; to the widget and its descendants. This may not be trivial as form controls in particular are border-box by default, so you’ll also have to account for that.
 
-[Wiki](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background)
->According to the CSS1 specification, released by the World Wide Web Consortium (W3C) in 1996 and revised in 1999, when a width or height is explicitly specified for any block-level element, it should determine only the width or height of the visible element, with the padding, borders, and margins applied afterward.[3][12] Internet Explorer in "quirks mode" includes the content, padding and borders within a specified width or height; this results in a narrower or shorter rendering of a box than would result following the standard behavior
+### What's it do for me?
 
-While fundamentally a flaw, and an aberation against the standard, the IE box model started to
-gain a following, and for a good reason. It makes sense.
+So what are some of the benefits of using the border-box model?
 
-## That's not a bug, that's a feature.
+[From Chris Coyier](https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0)
+>Why all the HOO-RAH?!
+><br><br>It makes working with boxes so super duper much nicer.
+><br><br>When you set the width of an element, that's the width that it is. If you set the width to 25%, it will take up 1/4 of the horizontal space available in its parent element. That's it.
 
-Let's start with an example adapted from Fred Meyers parable.
+#### But wait, there's more.
 
-Lets say you are a photographer and you have the opportunity to show one of your images
-at an art gallery.  The gallery manager tells you that you have a 36 x 24 inches spot and anything bigger
-will be rejected. You call your printer and ask them to print and frame your best work.  You tell the
-printer you want your picture to be as big as possible, but it needs some padding, about 2 inches on each side,
-and the frame should be 3 inches. You tell the printer your spot is 36 x 24 inches and ask him to ship direct to the gallery.
+There are a number of other benefits as well. It allows the mixture of different units easily, something
+rather difficult to manage before `calc()`, and even with `calc()`. It also allows for changes in element
+padding/border down the line without recalculating overall widths/heights to preserve layout, and as we've
+mentioned it matches our intuition.
 
-Soon later you get a call from the gallery manager, he asks you why you can't follow simple instructions and hangs up. Confused you call the printer, after considerable back and forth you discover he took you a little too literally.
-You said you wanted your photo as big as possible, and you got it, 36 x 24 inches.  Then the padding and framing was added on top of photo, leaving it well outside your allotment.
+#### When and where?
 
-While clarity and specificity is always important, sometimes it's nice to simply be understood.  Most people would
-agree that the printer didn't follow the intent of the photographers instructions.  It's well accepted that maximum
-dimensions should by respected, and lacking specificity, slack should come from the least qualified parameter, in this case, the size of the photo.
+There are a number of use cases, one of [Paul Irish's](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) top use cases is for columns.
 
-The w3x box model is a little like this very literal printer.  It takes you exactly at your direction, but
-this isn't always intuitive.
+[From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>One of my favorite use-cases that border-box solves well is columns. I might want to divide up my grid with 50% or 20% columns, but want to add padding via px or em. Without CSS’s upcoming `calc()` this is impossible… unless you use border-box. So easy. :) Another good one is applying 100% width and then wanting to add a padding to that element.
 
-## Professional Complaints
+### The ways of the master.
 
-### Illogical
+To many, the universal box-sizing reset seemed like a perfect solution to their web design woes. However, it's not without it's downfalls.  One such problem occurs when inserting
+third party components into the page.
 
-[From Peter Paul Koch](https://netdiver.net/interviews/peterpaulkoch.php)
->In my opinion this model is completely illogical.
-Logically, a box is measured from border to border. Take a physical box, any box. Put something in it that is distinctly smaller than the box. Ask anyone to measure the width of the box. He'll measure the distance between the sides of the box (the 'borders'). No one will think of measuring the content of the box.
-><br><br>Web designers who create boxes for holding content care about the *visible* width of the box, about the distance from border to border. The borders, and not the content, are the visual cues for the user of the site. Nobody is interested in the width of the content.
-I wonder why W3C made its box model so needlessly complicated?
+[From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>Any third party widgets add content directly into the page may need extra attention. Any widgets inside an iframe (like Disqus’s new theme) are naturally insulated from the parent page’s layout styles. If you need to make adjustments to the third party content you can apply box-sizing: content-box; to the widget and its descendants. This may not be trivial as form controls in particular are border-box by default, so you’ll also have to account for that.
 
-### That's Not What I Said
-
-Another problem, is that the standard box model is usually at odds with a designer's intention.
-
-[From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
->An obvious question is, “Isn’t working with the default model just a matter of learning a different way of saying the same thing?” If you’ve really got your heart set on a 100-pixel box, can’t you just do a bit of math and call it 50 pixels with 20px padding and 5px borders?
-><br><br> That we’d have to do this in the first place points to probably the simplest argument against the default box model: it approaches layout differently than actual designers do. When I try to lay out a page, I never think, “No matter what happens to the rest of the layout, I need this paragraph of text to take up exactly half of the page width.” I always think: “This column that contains text—and which has padding and borders and whatnot—should fill half the page.”
-><br><br> So the default model puts us through a lot of unnecessary translation work. Do we really want to manually be doing a bunch of math—”element width = declared width – (left padding + right padding) – (left border + right border)”—just to make CSS understand what we should have been able to declare with a simple, emphatic “width”?
-
-
-### Please Respond
-
-The traditional box model also really hampers responsive design
-
-[From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
->The default box model also doesn’t work well for responsive design. Consider the following very intuitive, should-be-very-easy style declaration, attempting to divide a responsive-width container into two equal-width columns, each with 15px of padding:
+This problem leads us to the last, and most recommended box-sizing reset.
 
 ```css
-.responsive-container .half-width-column {
-   width: 50%;
-   padding: 15px;
+html {
+  box-sizing: border-box;
 }
-```
->With the default box model, there’s no way to make this work. To get a 50% total width, you’d have to subtract 15px from 50% of the container width; but you don’t know the container width to be able to convert 15px into a percentage. As a result, whatever width value you attempt will always be broken: the columns will break and stack vertically at some widths, and they won’t fill the container at others.
-
-### Rooms Made of Glass
-
-And perhaps worst of all, it creates fragile layouts
-
-[From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
-> Because the default model allows numerous kinds of style declarations to change an element’s dimensions, element styles are built like a house of cards. This makes the default model a great source of styling “gotchas,” which can break an element’s styling at any time. Here’s an example:
-
-```css
-/* Image must be exactly 250px wide to fit properly in layout */
-.main-container img.fixed-width-img {
-   width: 250px;
-}
-
-/* 300 lines later...
-________________________________ */
-
-/* Today feels like a good day to make some pretty image styles */
-.main-container img {
-   border: 1px black solid;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 ```
 
->The sensible CSS above will break, since what needed to be a 250px-wide image is now 252px.
+Credit goes to [Jon Neal](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223)
+>This will give you the same result, and make it easier to change the box-sizing in plugins or other components that leverage other behavior.
+
+By setting box-sizing to border-box on the html root, and setting all elements to inherit
+their box-sizing, we are able to cancel out box-sizing on certain sub-components.  By setting box-sizing back to content-box on the sub-component containers, the inner elements of that component will inherit content-box and we've fixed the issue.
+
+### Keep in mind
+
+Some things to keep in mind for the border-box model. (pressupinc)
+
+1. Margins are still outside the element.
+2. Borders and padding now reduce content size
+3. Be alert if you're transitioning an entire site to the new box model
+
+### There's a price for everything.
+
+A few issues with the border-box model that people list are.
+
+- Issue with em paddings
+   -- "The box-sizing behavior is neat but has issues with the units you use,
+   for padding, doesn't like ems" - 456bereastreet.com
+
+- Nested border-box
+   -- "it has problems when one element with box-sizing:border-box is nested inside another. So in example 3, the box-sizing behavior is only applied to the column elements, not the input fields. To avoid the input fields becoming wider than their parents, I’ve made them a bit narrower for IE 7. Example 4 shows a possible workaround without using box-sizing. I’ve just reduced the widths of the columns and input fields to where they don’t become too wide until the browser window is really narrow."
+
+- box-sizing table bug
+   -- box-sizing doesn't completly work for tables, can be read about in the [chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=124816) bug report.
 
 #### Citations
-1. [https://www.jefftk.com/p/the-revenge-of-the-ie-box-model](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
-2. [https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background)
-3. [https://netdiver.net/interviews/peterpaulkoch.php](https://netdiver.net/interviews/peterpaulkoch.php)
-4. [https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
-5. [https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/](https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/)
+1. [https://css-tricks.com/almanac/properties/b/box-sizing](https://css-tricks.com/almanac/properties/b/box-sizing/)
+2. [http://caniuse.com/#feat=css3-boxsizing](http://caniuse.com/#feat=css3-boxsizing)
+3. [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+4. [https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0](https://css-tricks.com/international-box-sizing-awareness-day/#article-header-id-0)
+5. [http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223)
+6. [https://bugs.chromium.org/p/chromium/issues/detail?id=124816](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)

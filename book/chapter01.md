@@ -35,7 +35,7 @@ Height
 - height + padding-top + padding-bottom + border-top + border-bottom
 
 <div align="center">
-  <a href="http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223">
+  <a href="http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts">
     <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/box-model.png">
   </a>
 </div>
@@ -85,6 +85,6 @@ If you want to visualize all the boxes in your design, a cool trick to see every
 
 #### Citations
 1. [https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
-2. [http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223)
+2. [http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223](http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts)
 3. [https://css-tricks.com/the-css-box-model/#article-header-id-1](https://css-tricks.com/the-css-box-model/)
 4. [https://quirksmode.org/css/user-interface/boxsizing.html](https://quirksmode.org/css/user-interface/boxsizing.html)
