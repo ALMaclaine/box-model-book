@@ -56,7 +56,7 @@ Here's an efficiency comparison via [Paul Irish](https://www.paulirish.com/2012/
 
 <div align="center">
   <a href="https://docs.google.com/spreadsheets/d/1jJUuSBQj6a3imkX_QYZDVW5eDyE5tXULTkqnI7rMLU8/edit#gid=0">
-    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/efficiency.png">
+    <img src="../assets/img/efficiency.png">
   </a>
 </div>
 
