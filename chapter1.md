@@ -26,13 +26,13 @@ its padding, its border and its margin.
 
 The formulas for caclulating the actual widths and lengths are
 
-- Width
+Width
 
- - width  + padding-left + padding-right + border-left + border-right
+- width  + padding-left + padding-right + border-left + border-right
 
-- Height
+Height
 
- - height + padding-top + padding-bottom + border-top + border-bottom
+- height + padding-top + padding-bottom + border-top + border-bottom
 
 <div align="center">
   <a href="http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223">
