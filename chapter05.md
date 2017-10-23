@@ -35,6 +35,14 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Christopher Buecheler](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >So happy to hear this being advocated by a premiere developer. I've been complaining about CSS's box model since making the switch from table-based design back in the late 90s. Ending up having to set your 600px-wide column to 587px or whatnot to account for borders and padding is highly annoying and can make going back through the CSS time-consuming. I'm definitely looking forward to using the new box-sizing options on my future projects that don't need to be backward compatible with legacy browsers.
 
+### [Matt Kruse]
+>Also useful:
+>```css
+img, .content-box {
+   box-sizing: content-box !important;
+}
+```
+
 ### [Anon](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >...or you could do what I always do: use two boxes, one to define the column, one to define the look.
 ><br><br>Wireframe the page with boxes (no padding, no border, desired width). Nice and semantic, those 'these are my column boxes'-boxes (position: relative; of course).
