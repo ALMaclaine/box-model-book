@@ -35,9 +35,20 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Christopher Buecheler](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >So happy to hear this being advocated by a premiere developer. I've been complaining about CSS's box model since making the switch from table-based design back in the late 90s. Ending up having to set your 600px-wide column to 587px or whatnot to account for borders and padding is highly annoying and can make going back through the CSS time-consuming. I'm definitely looking forward to using the new box-sizing options on my future projects that don't need to be backward compatible with legacy browsers.
 
-
+### [Anon](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>...or you could do what I always do: use two boxes, one to define the column, one to define the look.
+><br><br>Wireframe the page with boxes (no padding, no border, desired width). Nice and semantic, those 'these are my column boxes'-boxes (position: relative; of course).
+><br><br>Then, put another box in each of these boxes, with the desired padding and border (a.k.a. non-semantic stuff); width and height 100%.
+><br><br>Problem solved! (Oh, rubbish: of course the content-box is all wrong!)
 
 ## Not Everyones Ecstastic
+
+### [Dan Eden, Facebook & Dropbox](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>Having used this on a project recently, I'm not 100% sold on the idea. It makes perfect sense for things like grid systems, and kills a lot of the usual layout headaches - particularly when it comes to mixing percentage and fixed unit width/height values, but it can become annoying to have to declare box-sizing: content-box; every time you want to override the universal selector.
+><br><br>For me, it's best left on a per-use basis. But I can see it's use. Chris Coyier has some other great universal selector suggestions.
+
+### [Justin](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>We had to remove this from `*` in our CSS framework. In Webkit browsers, this can create a bug with columns, where a column can float to the next row, to never float back up to its original position. We've seen this in several different instances. We're now targeting specific elements that actually need the border-box. It is a little scary using the * selector anyway. It's a great property, but I'm not sure `*` is a good idea.
 
 ### [Derek Watson](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >This seems like a buggy and highly unconventional solution to a simple problem. Instead, put your width on a container elements and padding on child elements. You'll find it works perfectly in all cases and you won't have to explain yourself at length to other developers on the project.
@@ -57,6 +68,9 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 >great tip, but non-square images with border / padding / margin appear to lose aspect ratio. presumably the same will happen to video too.
 ><br><br>would this be a sensible tweak?
 ><br><br> `*:not(img,video) { }`
+
+### [Adam Schnaare](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>What about adding a container element? Set the 'width' there, and then add padding and border?
 
 ### [Thierry Koblentz](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >I ran into an issue yesterday on iPad1 related to box-sizing, hence why I knew about the prefix issue. I learned the hard way... as usual ;)
