@@ -2,8 +2,7 @@
 
 ## But really, should I care?
 For how well regarded and significant this trick seems to be, I've never had it shoved
-in my face.  For significant this trick seems to be, and all the power it seemingly holds,
-it doesn't make a lot of noise.
+in my face.
 
 Whether this is a best kept secret, or just too mundane to mention, everyone taking design
 seriously should at least be aware of the box-sizing reset.
