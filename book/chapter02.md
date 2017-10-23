@@ -8,7 +8,7 @@ diagram to define a 'box model' of progressively larger boxes surrounding the co
 
 <div align="center">
   <a href="https://www.jefftk.com/p/the-revenge-of-the-ie-box-model">
-    <img src=../assets/img/ascii-box.png">
+    <img src="../assets/img/ascii-box.png">
   </a>
 </div>
 
