@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ex01 - Default Width Behavior</title>
+   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+   <style>
+      * {
+         margin: 0;
+      }
+
+      html, body {
+         height: 100%;
+         background-color: lightgreen;
+      }
+
+      .center-container {
+         width: 90%;
+         margin: 0 auto;
+         height: 100%;
+         background-color: white;
+      }
+
+      .flex {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .box1 {
+         background-color: lightblue;
+         height: 25%;
+         border: 20px solid orange;
+      }
+
+      .box2 {
+         background-color: lightblue;
+         width: 100%;
+         margin-top: 5%;
+         height: 25%;
+         border: 20px solid orange;
+         margin-left: -20px;
+      }
+
+      .text {
+         font-size: 2em;
+         font-family: 'Slabo 27px', serif;
+         color: #999;
+      }
+
+   </style>
+</head>
+<body>
+<div class="center-container">
+   <div class="box1 flex">
+         <p class="text">No width property.</p>
+   </div>
+   <div class="box2 flex">
+      <p class="text">Width property 100%.</p>
+   </div>
+</div>
+</body>
+</html>

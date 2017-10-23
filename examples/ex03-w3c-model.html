@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Ex03 - w3c model</title>
+   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+      }
+      body, html {
+         height: 100%;
+         min-height: 400px;
+         background-color: lightgrey;
+      }
+
+      .flex {
+         display: flex;
+         justify-content: center;
+      }
+
+      .flex-center {
+         align-items: center;
+      }
+
+      .ml-50p {
+         margin-left: 50px;
+      }
+
+      .w100 {
+         width: 100%;
+      }
+
+      .fl2 {
+         display: flex;
+         justify-content: center;
+      }
+
+      .h80 {
+         height: 80%;
+      }
+
+      .flx-shr0 {
+         flex-shrink: 0;
+      }
+
+      .text {
+         font-family: 'Slabo 27px', serif;
+         font-size: 2em;
+         color: #333;
+         background-color: #bbb;
+         padding: 100px 0;
+         text-align: center;
+         line-height: 50px;
+      }
+
+      .box {
+         width: 250px;
+         height: 250px;
+         border: 50px solid lightpink;
+         margin: 50px;
+      }
+
+      .box2 {
+         width: 100px;
+         height: 100px;
+         background-color: #555;
+      }
+
+      .mandb {
+         width: 48px;
+         height: 32px;
+      }
+
+      .rl-box {
+         line-height: 16px;
+         text-align: center;
+         border: 1px solid black;
+      }
+
+      .lb1 {
+         width: 248px;
+         margin-right: 100px;
+         height: 16px;
+      }
+
+      .lb2 {
+         margin-left: 250px;
+      }
+
+      .lb3 {
+         margin-left: 350px;
+      }
+
+      .rulers {
+         position: absolute;
+         top: 40%;
+         left: calc(50% - 225px);
+      }
+
+   </style>
+</head>
+<body>
+   <div class="flex flex-center h80">
+      <div class="box2 flx-shr0">
+      </div>
+      <div class="box flx-shr0">
+         <p class="text">content</p>
+      </div>
+
+      <div class="box2 flx-shr0">
+      </div>
+   </div>
+   <div class="rulers">
+      <div class="fl2 w100">
+         <div class="mandb rl-box flx-shr0">
+            border 50px
+         </div>
+         <div class="lb3 mandb rl-box flx-shr0">
+            border 50px
+         </div>
+      </div>
+      <div class="flex ml-50p w100">
+         <div class="lb1 rl-box">
+            content width 250px
+         </div>
+      </div>
+      <div class="fl2 w100">
+         <div class="mandb rl-box flx-shr0">
+            margin 50px
+         </div>
+         <div class="lb2 mandb rl-box flx-shr0">
+            margin 50px
+         </div>
+      </div>
+   </div>
+</body>
+</html>

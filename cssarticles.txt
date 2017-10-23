@@ -1,0 +1,25 @@
+https://css-tricks.com/the-css-box-model/
+https://css-tricks.com/almanac/properties/b/box-sizing/
+http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223
+https://www.jefftk.com/p/the-revenge-of-the-ie-box-model
+https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background
+https://quirksmode.org/css/user-interface/boxsizing.html
+http://www.vorsprungdurchwebstandards.de/interviews/fallinginlovewithcss/douglas-bowman/
+https://stackoverflow.com/questions/2429819/why-is-the-w3c-box-model-considered-better
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+https://docs.google.com/spreadsheets/d/1jJUuSBQj6a3imkX_QYZDVW5eDyE5tXULTkqnI7rMLU8/edit#gid=0
+http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/
+http://www.jr.pl/www.quirksmode.org/css/contents.html
+https://www.paulirish.com/wp-content/uploads/2011/gplus-boxsizing.html
+https://css-tricks.com/international-box-sizing-awareness-day/
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/
+https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/
+https://github.com/twbs/bootstrap/issues/12351
+https://www.w3.org/TR/css-ui-3/#box-sizing
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model
+https://netdiver.net/interviews/peterpaulkoch.php
+
+extra links:
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+https://blog.jquery.com/2012/08/16/jquery-1-8-box-sizing-width-csswidth-and-outerwidth/
