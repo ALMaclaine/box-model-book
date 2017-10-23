@@ -41,7 +41,7 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 >><br><br>Sorry for the long rant...I just don't see how anyone can not LOVE to type less tags (AND less CSS required for the grid system itself) so that their HTML is clearer and more concise and doesn't have extra tags thrown in as work-arounds for a box-model that never should have existed, IMHO.
 >
 >>[Gavin Smith](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) Reply
->>Sometimes there's no way to add a child element to apply padding to that isn't otherwise completely unnecessary. What's the bigger evil, playing the CSS gods with new but fairly well supported box model adjustments or unnecessary markup?
+>><br><br>Sometimes there's no way to add a child element to apply padding to that isn't otherwise completely unnecessary. What's the bigger evil, playing the CSS gods with new but fairly well supported box model adjustments or unnecessary markup?
 >><br><br>I say the latter. By a long shot.
 
 ### [Niels Matthijs](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
