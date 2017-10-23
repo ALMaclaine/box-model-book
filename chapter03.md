@@ -37,7 +37,7 @@ First is browser support, looking at http://caniuse.com/#feat=css3-boxsizing wil
 is totally safe today.
 
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
->Due to browser support, this recommendation is only for projects that support IE8 and up. (Full browser compat at MDN) Firefox <= 28 still needs the -moz- prefix, and <= iOS4, Android <= 2.3 need the -webkit-, but everyone else uses the unprefixed. You can find more info about a box-sizing polyfill for IE6 & 7 at html5please.com/#box-sizing (which was developed with * { box-sizing: border-box!).
+>Due to browser support, this recommendation is only for projects that support IE8 and up. (Full browser compat at MDN) Firefox <= 28 still needs the -moz- prefix, and <= iOS4, Android <= 2.3 need the -webkit-, but everyone else uses the unprefixed. You can find more info about a box-sizing polyfill for IE6 & 7 at html5please.com/#box-sizing (which was developed with `* { box-sizing: border-box !important }`).
 
 ### But is it safe?
 
