@@ -6,7 +6,7 @@ The w3c box model behaves differently depending on whether width is explicitly s
 If width is explicitly set, say at 100%, then the padding and border are added outside
 the element. If however, no width is set, then the border and padding are inset.
 
-Load this <a href="../examples/ex01-default-behavior.html">example</a> file.
+Load this <a href="./examples/ex01-default-behavior.html">example</a> file.
 
 Looking at the code, you can see that there is no width on `.box1` but a width
 of 100% on `.box2`.  Examining the html file in the browser, you can see the
@@ -36,4 +36,4 @@ Make sure to keep this quirk in mind when choosing to set width.
 Understanding the box-model and how it's part sit together is extremely important.
 
 To see a visual representation of the css box model, load
-<a href="../examples/ex02-box-model.html">this</a> file in a browser.
+<a href="./examples/ex02-box-model.html">this</a> file in a browser.
