@@ -108,3 +108,11 @@ ________________________________ */
 }
 ```
 >The sensible CSS above will break, since what needed to be a 250px-wide image is now 252px.
+
+#### Citations
+1. [https://www.jefftk.com/p/the-revenge-of-the-ie-box-model](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
+2. [https://www.jefftk.com/p/the-revenge-of-the-ie-box-model](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
+3. [https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background)
+4. [https://netdiver.net/interviews/peterpaulkoch.php](https://netdiver.net/interviews/peterpaulkoch.php)
+5. [https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
+6. [https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/](https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/)
