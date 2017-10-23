@@ -45,6 +45,7 @@ is that it behaves differently depending on whether the width is explicitly set.
 >
 If you don't declare a width, and the box has static or relative positioning, the width will remain 100% in width and the padding and border will push inwards instead of outward. But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal... But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal.
 >
+
 <h2>Example of code</h2>
 <!DOCTYPE html>
 <html>
