@@ -82,7 +82,7 @@ The traditional box model also really hampers responsive design
 [From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
 >The default box model also doesn’t work well for responsive design. Consider the following very intuitive, should-be-very-easy style declaration, attempting to divide a responsive-width container into two equal-width columns, each with 15px of padding:
 
-```css
+>```css
 .responsive-container .half-width-column {
    width: 50%;
    padding: 15px;
