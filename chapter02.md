@@ -87,15 +87,13 @@ The traditional box model also really hampers responsive design
 }
 ```
 >With the default box model, there’s no way to make this work. To get a 50% total width, you’d have to subtract 15px from 50% of the container width; but you don’t know the container width to be able to convert 15px into a percentage. As a result, whatever width value you attempt will always be broken: the columns will break and stack vertically at some widths, and they won’t fill the container at others.
-%
 
 And perhaps worst of all, it creates fragile layouts
 
-From Fred Meyer
+[From Fred Meyer](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
+> Because the default model allows numerous kinds of style declarations to change an element’s dimensions, element styles are built like a house of cards. This makes the default model a great source of styling “gotchas,” which can break an element’s styling at any time. Here’s an example:
 
-%Quote
-Because the default model allows numerous kinds of style declarations to change an element’s dimensions, element styles are built like a house of cards. This makes the default model a great source of styling “gotchas,” which can break an element’s styling at any time. Here’s an example:
-
+```css
 /* Image must be exactly 250px wide to fit properly in layout */
 .main-container img.fixed-width-img {
    width: 250px;
@@ -108,5 +106,5 @@ ________________________________ */
 .main-container img {
    border: 1px black solid;
 }
-The sensible CSS above will break, since what needed to be a 250px-wide image is now 252px.
-%
+```
+>The sensible CSS above will break, since what needed to be a 250px-wide image is now 252px.
