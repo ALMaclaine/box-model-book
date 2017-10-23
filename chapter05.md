@@ -7,7 +7,7 @@ Here are some of the top quotes, note some of the names and companies.
 
 ## Quotes
 
-### Douglas Bowman, Famous Designer
+### [Douglas Bowman, Famous Designer](http://www.vorsprungdurchwebstandards.de/interviews/fallinginlovewithcss/douglas-bowman/)
 >What drives you crazy when using CSS?
 >>The Box Model, with regards to width and height. If I want a box to be x-wide by y-high, that’s what I want the final box to be. None of this subtractive nonsense needed to calculate something called “content width/height”. It’s dumbfounding that padding and border aren’t included in width and height measurements, or that I’m at least not given the option to force them to be included. An obvious sign that the CSS specification was written by technical people who understood modular construction differently than any designer ever would.
 >><br><br>It’s like a furniture salesman providing you the length and height of a couch you like; you confirm the couch will fit perfectly along one wall in your home. Then when you get the couch home, it’s more than a foot too long and about six inches too tall. When you phone back to the furniture salesman to complain about the incorrect length he provided, he responds by stating that the length didn’t include the armrests and the height didn’t include the metal legs, and aren’t you stupid for not taking those into account in your measurements! What!?
