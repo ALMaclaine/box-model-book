@@ -14,14 +14,17 @@ Here are some of the top quotes, note some of the names and companies.
 In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did something right when they originally implemented the box model against specification. They implemented it the way they thought the masses would expect the box model to work. Even though I’d like all browsers to build to specification so we all gain consistency and predictability, it’s a shame – in this instance – that Microsoft ended up bending to the specification, instead of rallying other browser makers and pressuring the W3C to change the specification to match logical behavior, and by extension, IE5/Win’s existing implementation.
 >><br><br>CSS2.1 bended and evolved to meet and compromise with popular rendering implementations that have become de facto standards. It’s too bad that didn’t include correcting the backwards box model.
 
-### [nirmal](https://stackoverflow.com/questions/2429819/why-is-the-w3c-box-model-considered-better)
->Once I got into accidentally coding for IE's box model and became a fan of it. That's the perfect logic for a box. Ask W3C to run a container shipping firm, and it's dead in a week.
-
 ### [Paul Irish, Google Chrome Team](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >One of my least favorite parts about layout with CSS is the relationship of width and padding. You’re busy defining widths to match your grid or general column proportions, then down the line you start to add in text, which necessitates defining padding for those boxes. And ‘lo and behold, you now are subtracting pixels from your original width so the box doesn’t expand.
 
+### [Mike Sherov, Adobe & jQuery](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>Im looking to fix all known bugs with border-box in jquery in version 1.8. I've been saying for a while that all signs point to wide adoption of border-box, especially on mobile. If anyone here is using border-box and jquery and finds a bug please file it at: http://bugs.jquery.com Thanks!
+
 ### [Yathura Thorn](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >We’ve been using `* {box-sizing: border-box;}` in one of my projects (deployed in production, averaging over 1mln visits a month) at work for about a year now, and it seems to be holding up just fine. The project has been tested in IE8 & 9 and the latests Firefox and Chrome versions and we’ve had no problems. All jQuery (+UI) offset calculations and animations run fine, even in any element we’ve displayed as inline-block. As of late we’ve started testing the project on mobile devices (iPhone, iPad and Android) and we’ve had no issues regarding box-sizing with any of them yet, so it seems to work just fine.
+
+### [nirmal](https://stackoverflow.com/questions/2429819/why-is-the-w3c-box-model-considered-better)
+>Once I got into accidentally coding for IE's box model and became a fan of it. That's the perfect logic for a box. Ask W3C to run a container shipping firm, and it's dead in a week.
 
 ### [Joe Lambert](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >I'm a big fan of this technique and have been using it in a number of mobile web apps (and increasingly) website projects. Its a really welcome way to create a sensible baseline to work from for cross platform development.
