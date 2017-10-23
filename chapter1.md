@@ -75,7 +75,7 @@ and sit next to other inline elements until their widths expand past the break p
 [From Chris Coyier](https://css-tricks.com/the-css-box-model/#article-header-id-4)
 >We've been kind of focusing on boxes as block-level elements here. It's easy to think of block-level elements as boxes, but inline elements are boxes too. Think of them as really really long and skinny rectangles, that just so happen to wrap at every line. They are able to have margin, padding, borders just like any other box.
 
-### Code Tricks
+## Code Tricks
 
 If you want to visualize all the boxes in your design, a cool trick to see every box on the screen is as follows
 
