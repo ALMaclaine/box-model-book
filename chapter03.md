@@ -48,8 +48,8 @@ is totally safe today.
 ### But it's slow right?
 
 [From Paul Irish](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
->You might get up in arms about the universal \* selector.
-><br><br>Apparently you’ve heard its slow. Firstly, it’s not. It is as fast as h1 as a selector. It can be slow when you specifically use it like `.foo > *`, so don’t do that. Aside from that, you are not allowed to care about the performance of \* unless you concatenate all your javascript, have it at the bottom, minify your css and js, gzip all your assets, and losslessly compress all your images. If you aren’t getting 90+ Page Speed scores, it’s way too early to be thinking about selector optimization. See also: CSS Selector Performance has changed! (For the better) by Nicole Sullivan.
+>You might get up in arms about the universal `*` selector.
+><br><br>Apparently you’ve heard its slow. Firstly, it’s not. It is as fast as h1 as a selector. It can be slow when you specifically use it like `.foo > *`, so don’t do that. Aside from that, you are not allowed to care about the performance of `*` unless you concatenate all your javascript, have it at the bottom, minify your css and js, gzip all your assets, and losslessly compress all your images. If you aren’t getting 90+ Page Speed scores, it’s way too early to be thinking about selector optimization. See also: CSS Selector Performance has changed! (For the better) by Nicole Sullivan.
 ><br><br>So… enjoy and hope you’ll find this a far more natural layout model.
 
 
