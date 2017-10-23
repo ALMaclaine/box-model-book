@@ -1,5 +1,57 @@
 # Chapter 4 - Examples
 
+## Every Reset
+
+### Original Reset
+
+```css
+   * {
+      box-sizing: border-box;
+   }
+```
+
+Every normal element has border-box applied to it.
+
+### Full Reset
+
+```css
+   *, *:after, *:before {
+      box-sizing: border-box;
+   }
+```
+
+Resets all normal elements as well as pseudo-elements
+
+### Inheriting Reset
+
+```css
+   html {
+      box-sizing: border-box;
+   }
+
+   *, *:after, *:before {
+      box-sizing: inherit;
+   }
+```
+
+This reset applies box-sizing at the root element and the has all other elements inherit from it.
+This allows you to reset box-sizing for components by changing the containing element to content-box.
+
+### Root Reset
+
+```css
+   :root {
+      box-sizing: border-box;
+   }
+
+   *, *:after, *:before {
+      box-sizing: inherit;
+   }
+```
+
+The root reset is the same as the inheriting reset, except we use the psuedo class
+matching the root element of the tree, `:root`.
+
 ## Example 1 - Default Width Behavior
 
 The w3c box model behaves differently depending on whether width is explicitly set.
