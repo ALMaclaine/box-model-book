@@ -125,15 +125,20 @@ Some things to keep in mind for the border-box model. (pressupinc)
 
 A few issues with the border-box model that people list are.
 
-- Issue with em paddings
-   -- "The box-sizing behavior is neat but has issues with the units you use,
-   for padding, doesn't like ems" - 456bereastreet.com
+#### Issue with em paddings
 
-- Nested border-box
-   -- "it has problems when one element with box-sizing:border-box is nested inside another. So in example 3, the box-sizing behavior is only applied to the column elements, not the input fields. To avoid the input fields becoming wider than their parents, I’ve made them a bit narrower for IE 7. Example 4 shows a possible workaround without using box-sizing. I’ve just reduced the widths of the columns and input fields to where they don’t become too wide until the browser window is really narrow."
+[From Roger Johansson](http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/)
+ >The box-sizing behavior is neat but has issues with the units you use, for padding, doesn't like ems."
 
-- box-sizing table bug
-   -- box-sizing doesn't completly work for tables, can be read about in the [chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=124816) bug report.
+#### Nested border-box
+
+[From Roger Johansson](http://www.456bereastreet.com/archive/201104/controlling_width_with_css3_box-sizing/)
+>It has problems when one element with box-sizing:border-box is nested inside another. So in example 3, the box-sizing behavior is only applied to the column elements, not the input fields. To avoid the input fields becoming wider than their parents, I’ve made them a bit narrower for IE 7. Example 4 shows a possible workaround without using box-sizing. I’ve just reduced the widths of the columns and input fields to where they don’t become too wide until the browser window is really narrow.
+
+#### box-sizing table bug
+
+[Chromium Bug](https://bugs.chromium.org/p/chromium/issues/detail?id=124816)
+   -- box-sizing doesn't completly work for tables, can be read about in the [bug](https://bugs.chromium.org/p/chromium/issues/detail?id=124816) report.
 
 #### Citations
 1. [https://css-tricks.com/almanac/properties/b/box-sizing](https://css-tricks.com/almanac/properties/b/box-sizing/)
