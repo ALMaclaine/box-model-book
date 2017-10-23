@@ -15,7 +15,7 @@ Here is an image of the box model.
 
 <div align="center">
   <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">
-    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/wlarrows.png">
+    <img src="../assets/img/wlarrows.png">
   </a>
 </div>
 
@@ -36,7 +36,7 @@ Height
 
 <div align="center">
   <a href="http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts">
-    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/box-model.png">
+    <img src="../assets/img/box-model.png">
   </a>
 </div>
 
@@ -54,7 +54,7 @@ is that it behaves differently depending on whether the width is explicitly set.
 
 <div align="center">
   <a href="https://quirksmode.org/css/user-interface/boxsizing.html">
-    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/widths.gif">
+    <img src="../assets/img/widths.gif">
   </a>
 </div>
 

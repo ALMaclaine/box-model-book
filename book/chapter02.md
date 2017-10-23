@@ -8,7 +8,7 @@ diagram to define a 'box model' of progressively larger boxes surrounding the co
 
 <div align="center">
   <a href="https://www.jefftk.com/p/the-revenge-of-the-ie-box-model">
-    <img src="https://github.com/ALMaclaine/box-model-book/blob/master/assets/img/ascii-box.png">
+    <img src=../assets/img/ascii-box.png">
   </a>
 </div>
 
@@ -22,7 +22,7 @@ Internet Explorer Implemented it's box model like this
 
 <div align="center">
   <a href="https://www.jefftk.com/p/the-revenge-of-the-ie-box-model">
-    <img src="https://raw.githubusercontent.com/ALMaclaine/box-model-book/master/assets/img/ascii-iebox.png">
+    <img src="../assets/img/ascii-iebox.png">
   </a>
 </div>
 
