@@ -1,5 +1,6 @@
 https://css-tricks.com/the-css-box-model/
 https://css-tricks.com/almanac/properties/b/box-sizing/
+https://css-tricks.com/box-sizing/
 http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223
 https://www.jefftk.com/p/the-revenge-of-the-ie-box-model
 https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background

@@ -20,6 +20,25 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 ### [Mike Sherov, Adobe & jQuery](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >Im looking to fix all known bugs with border-box in jquery in version 1.8. I've been saying for a while that all signs point to wide adoption of border-box, especially on mobile. If anyone here is using border-box and jquery and finds a bug please file it at: http://bugs.jquery.com Thanks!
 
+### [Mark Otto, Github & bootstrap](https://github.com/twbs/bootstrap/issues/12351)
+>`border-box` is better for sizing components and folks all over are switching to it. Perhaps these other libraries should upgrade to support it. It's as easy/difficult for us to do it as it is for others. It's intrusive, but it's smarter and more durable development
+
+### [Jon Hicks, famous designer](https://css-tricks.com/css-wishlist/)
+>I would love a different box model! I find it bizarre that padding and border add the width of an object, and would love to be able to give something like a textarea 100% width and 3px padding without worrying what it's going to do the layout. Perhaps something like padding-inside as a new selector?
+><br><br>In that vain I also wish I could specify a 100% width for an element, minus a set fixed width. Again, very useful when creating fluid designs with form elements!
+
+### [Peter Paul Koch, famouse designer](https://netdiver.net/interviews/peterpaulkoch.php)
+>My favorite example is W3C's box model. In this model, the width property defines the width of the content of the box, excluding paddings and borders. In my opinion this model is completely illogical.
+><br><br>Logically, a box is measured from border to border. Take a physical box, any box. Put something in it that is distinctly smaller than the box. Ask anyone to measure the width of the box. He'll measure the distance between the sides of the box (the 'borders'). No one will think of measuring the content of the box.
+><br><br>Web designers who create boxes for holding content care about the *visible* width of the box, about the distance from border to border. The borders, and not the content, are the visual cues for the user of the site. Nobody is interested in the width of the content.
+><br><br>I wonder why W3C made its box model so needlessly complicated?
+
+### [Elliot Sprehn, Adobe & Chromium](https://www.paulirish.com/wp-content/uploads/2011/gplus-boxsizing.html)
+>Yeah, I definitely think IE's model is superior.
+
+### [Nicolas Gallagher, normalize.css]
+>Yeah, ever since IE8 came out with support for `box-sizing` we've been waiting until IE6/7 have negligible market share. I'm not sure how useful a global reset of the box model is going to be, but it's definitely useful for fluid components at the moment.
+
 ### [Tommy Maintz, Sencha](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >In both ExtJS 4+ and Sencha Touch 2+ we have been using box-sizing: border-box. It greatly simplifies your CSS, layouts and many of the calculations we had to do in JavaScript before. Glad to see others are starting to see the benefits of this.
 
@@ -47,6 +66,9 @@ img, .content-box {
 }
 ```
 >
+
+### [digitalseraph](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>I constantly come back to this page. This has saved me frustration, headaches, and untold hours wasted from screwing with margins and padding and trying to calculate widths and heights unnecessarily for the past 2+ years. I apply this fix to almost every web application and website that I build. Are you aware of any solutions for this in HTML5 (or future CSS4 standards)? Thank you Paul!
 
 ### [Anon](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >...or you could do what I always do: use two boxes, one to define the column, one to define the look.
