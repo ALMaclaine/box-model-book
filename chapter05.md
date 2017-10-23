@@ -22,3 +22,12 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 
 ### [Yathura Thorn](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >We’ve been using `* {box-sizing: border-box;}` in one of my projects (deployed in production, averaging over 1mln visits a month) at work for about a year now, and it seems to be holding up just fine. The project has been tested in IE8 & 9 and the latests Firefox and Chrome versions and we’ve had no problems. All jQuery (+UI) offset calculations and animations run fine, even in any element we’ve displayed as inline-block. As of late we’ve started testing the project on mobile devices (iPhone, iPad and Android) and we’ve had no issues regarding box-sizing with any of them yet, so it seems to work just fine.
+
+### [Joe Lambert](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>I'm a big fan of this technique and have been using it in a number of mobile web apps (and increasingly) website projects. Its a really welcome way to create a sensible baseline to work from for cross platform development.
+
+## Not Everyones Ecstastic
+
+### [Justin](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+>I'm also a fan of changing box-sizing—to an extent. I think it's only appropriate with fluid applications since percentage widths generate unpredictable sizes.
+><br><br>Changing all elements would only be repeating your objection to the box model in reverse. Now you have to account for the math on the _inside_ of the element. This is in many ways harder to keep track of because there's no longer a value in your stylesheet that displays the width. Want an image that's the same size as the content width of the wrapper? Now you have to subtract the padding/margins/borders from the width—instead of just using the width.
