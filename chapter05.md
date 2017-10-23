@@ -40,7 +40,7 @@ In that regard, and in my opinion, Microsoft’s IE5/Windows team actually did s
 >><br><br>As far as developers needing an explanation...Bootstrap 3 converts all tags to border-box, but I didn't have to have bootstrap 3 explained to me...I right-clicked on a span in firebug, saw that they were using pixel-padding for their columns but percentage widths and said, "WTF, how did they do that?" Then, I saw the box-sizing on the tag and looked it up with a quick google search. When I saw the definition for box-sizing, what it does, and what browsers support it, I could have thrown a party. It took all of 2 minutes to figure out what Bootstrap3 had done, and now that I know about it, I'll never go back...it is ridiculous to have 24 tags for 12 columns.
 >><br><br>Sorry for the long rant...I just don't see how anyone can not LOVE to type less tags (AND less CSS required for the grid system itself) so that their HTML is clearer and more concise and doesn't have extra tags thrown in as work-arounds for a box-model that never should have existed, IMHO.
 >
->><br><br>[Gavin Smith](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) Reply
+>>[Gavin Smith](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) Reply
 >>Sometimes there's no way to add a child element to apply padding to that isn't otherwise completely unnecessary. What's the bigger evil, playing the CSS gods with new but fairly well supported box model adjustments or unnecessary markup?
 >><br><br>I say the latter. By a long shot.
 
