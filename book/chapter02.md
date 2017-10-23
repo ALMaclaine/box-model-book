@@ -111,8 +111,7 @@ ________________________________ */
 
 #### Citations
 1. [https://www.jefftk.com/p/the-revenge-of-the-ie-box-model](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
-2. [https://www.jefftk.com/p/the-revenge-of-the-ie-box-model](https://www.jefftk.com/p/the-revenge-of-the-ie-box-model)
-3. [https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background)
-4. [https://netdiver.net/interviews/peterpaulkoch.php](https://netdiver.net/interviews/peterpaulkoch.php)
-5. [https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
-6. [https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/](https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/)
+2. [https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background](https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug#Background)
+3. [https://netdiver.net/interviews/peterpaulkoch.php](https://netdiver.net/interviews/peterpaulkoch.php)
+4. [https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/](https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/)
+5. [https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/](https://pressupinc.com/blog/2014/01/css-default-box-model-utter-madness-parable/)
