@@ -15,4 +15,4 @@ current UCI Software Engineering student, with a love for solving obscure proble
 
 ### Index
 
-- [Chapter 1](../book/chapter01.md)
+- [Chapter 1](./book/chapter01.md)
