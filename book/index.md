@@ -15,4 +15,9 @@ current UCI Software Engineering student, with a love for solving obscure proble
 
 ### Index
 
-- [Chapter 1](./chapter01.md)
+- [Chapter 1 - The Box Model](./chapter01.md)
+- [Chapter 2 - Some History](./chapter02.md)
+- [Chapter 3 - Box-Sizing To The Rescue](./chapter03.md)
+- [Chapter 4 - Examples](./chapter04.md)
+- [Chapter 5 - The Talk Around Town.](./chapter05.md)
+- [Chapter 6 - In The Wild](./chapter06.md)

@@ -1,4 +1,4 @@
-# Chapter 6 - In the wild
+# Chapter 6 - In The Wild
 
 ## But really, should I care?
 For how well regarded and significant this trick seems to be, I've never had it shoved
