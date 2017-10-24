@@ -126,6 +126,29 @@ Some things to keep in mind for the border-box model.
 box-sizing also impacts the dom as well, so expect javascript functions related to dimensions
 to adjust accordingly.
 
+## Trouble in Paradise
+
+The one issue I came across when researching this topic that seems unavoidable, is the aspect
+ratio distortion inherent when using border-box on replaced content.  That is, when using
+border-box on images, videos and svg elements, padding and border will steal away from
+content area and in many cases causes unwanted photo re-sizing or worse, ruins the aspect ratio.
+
+The problem is less severe when using borders and padding of equal dimensions. In this
+case the image is simply scaled down uniformly.  Some people have a mistrust of the
+browser image scaling algorithms, but they are a small minority, the vast majority
+of websites in use today have atleast some image scaling built into their layouts.
+
+<div align="center">
+  <a href="../examples/ex08-image-scaling.html">
+    <img src="../assets/img/scaled.png">
+  </a>
+</div>
+
+ but if
+a horizontal or vertical edge has a different amount of padding than it's perpendicular
+match, the aspect ratio of the content is not honored.
+
+For example, if you have a 100
 
 #### Citations
 1. [https://css-tricks.com/almanac/properties/b/box-sizing](https://css-tricks.com/almanac/properties/b/box-sizing/)
