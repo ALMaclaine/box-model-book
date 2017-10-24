@@ -118,3 +118,12 @@ img, .content-box {
 ### [Justin](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 >I'm also a fan of changing box-sizing—to an extent. I think it's only appropriate with fluid applications since percentage widths generate unpredictable sizes.
 ><br><br>Changing all elements would only be repeating your objection to the box model in reverse. Now you have to account for the math on the _inside_ of the element. This is in many ways harder to keep track of because there's no longer a value in your stylesheet that displays the width. Want an image that's the same size as the content width of the wrapper? Now you have to subtract the padding/margins/borders from the width—instead of just using the width.
+
+#### Citations
+1. [http://www.vorsprungdurchwebstandards.de/interviews/fallinginlovewithcss/douglas-bowman/](http://www.vorsprungdurchwebstandards.de/interviews/fallinginlovewithcss/douglas-bowman/)
+2. [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+3. [https://github.com/twbs/bootstrap/issues/12351](https://github.com/twbs/bootstrap/issues/12351)
+4. [https://css-tricks.com/css-wishlist/](https://css-tricks.com/css-wishlist/)
+5. [https://netdiver.net/interviews/peterpaulkoch.php](https://netdiver.net/interviews/peterpaulkoch.php)
+6. [https://www.paulirish.com/wp-content/uploads/2011/gplus-boxsizing.html](https://www.paulirish.com/wp-content/uploads/2011/gplus-boxsizing.html)
+7. [https://stackoverflow.com/questions/2429819/why-is-the-w3c-box-model-considered-better](https://stackoverflow.com/questions/2429819/why-is-the-w3c-box-model-considered-better)
