@@ -54,6 +54,10 @@ matching the root element of the tree, `:root`.
 
 ### Preserving Replaced Content
 
+If you wish to maintain the original scaling or aspect ratio of replaced content
+(img, video, svg) then you should avoid setting them to border-box with one of
+the following methods.
+
 ```css
    :root {
       box-sizing: border-box;
