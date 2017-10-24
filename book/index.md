@@ -7,7 +7,7 @@
 By Alessandro Maclaine
 
 Alessandro Maclaine has been a web developer for three years.  A UCI Math graduate,
-current UCI Software Engineering student, with a love for solving obscure problems.
+and current UCI Software Engineering student, with a love for solving obscure problems.
 
 - [npm](https://www.npmjs.com/~almaclaine)
 - [github](https://github.com/almaclaine)
