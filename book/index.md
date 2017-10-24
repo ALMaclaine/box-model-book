@@ -21,3 +21,8 @@ current UCI Software Engineering student, with a love for solving obscure proble
 - [Chapter 4 - Examples](./chapter04.md)
 - [Chapter 5 - The Talk Around Town.](./chapter05.md)
 - [Chapter 6 - In The Wild](./chapter06.md)
+
+### License
+The CSS Box Model and the Box-Sizing Property, A Survey - is released under the MIT license.
+
+Copyright (C) 2017 By Alessandro Maclaine
