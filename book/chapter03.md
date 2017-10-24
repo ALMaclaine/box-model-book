@@ -144,11 +144,17 @@ of websites in use today have atleast some image scaling built into their layout
   </a>
 </div>
 
- but if
-a horizontal or vertical edge has a different amount of padding than it's perpendicular
+But if instead, a horizontal or vertical edge has a different amount of padding than it's perpendicular
 match, the aspect ratio of the content is not honored.
 
-For example, if you have a 100
+<div align="center">
+  <a href="../examples/ex09-muh-aspect.html">
+    <img src="../assets/img/aspect.png">
+  </a>
+</div>
+
+In this example you can see horizontal padding is greater than vertical padding, and our
+image is scaled inwards, losing its aspect ratio and distorting its perspective.
 
 #### Citations
 1. [https://css-tricks.com/almanac/properties/b/box-sizing](https://css-tricks.com/almanac/properties/b/box-sizing/)
