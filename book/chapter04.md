@@ -52,6 +52,34 @@ This allows you to reset box-sizing for components by changing the containing el
 The root reset is the same as the inheriting reset, except we use the psuedo class
 matching the root element of the tree, `:root`.
 
+### Preserving Replaced Content
+
+```css
+   :root {
+      box-sizing: border-box;
+   }
+
+   *, *:after, *:before {
+      box-sizing: inherit;
+   }
+
+   img, video, svg, .content-box {
+      box-sizing: content-box;
+   }
+```
+
+or
+
+```css
+   :root {
+      box-sizing: border-box;
+   }
+
+   *:not(img):not(video):not(svg), *:after, *:before {
+      box-sizing: inherit;
+   }
+```
+
 ## Example 1 - Default Width Behavior
 
 The w3c box model behaves differently depending on whether width is explicitly set.
@@ -142,3 +170,24 @@ past we'd have to hand calculate how much to subtract to meet the correct dimens
 But thanks to box-sizing, we just add the border-box property and suddenly our layout
 is fixed, as shown in column 3.
 
+## Example 8 - Scaled Images
+
+There's an argument to be made that replaced content such as img, video and svg,
+should not have it's box-sizing changed as it can cause unwanted scaling.
+
+Click  <a href="../examples/ex08-image-scaling.html">here</a> for the file.
+
+You can see that our padding is causing the image to scale down uniformly.  To me
+this is a minor issue, but some people have concerns about the image scaling capabilities
+of browsers.
+
+## Example 9 - Muh Aspect Ratio
+
+Similar to above, except we force a break in our aspect ratio, an obvious issue.
+
+Click  <a href="../examples/ex09-muh-aspect.html">here</a> for the file.
+
+You can see that our padding is causing the image to scale inwards more than down.  This
+issue is not a minor issue and serious consideration should be made on how these situations
+will be handled.  It's for this reason some people avoid applying the box-sizing reset
+to replaced content.
